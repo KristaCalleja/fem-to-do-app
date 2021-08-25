@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+:root{
+  /* Dark mode */
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+  /* Light mode */
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+  /* Typography */
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+#root{
+  background: var(--very-dark-blue);
+  height: 100vh;
+}
+.header{
+  background: url(images/bg-mobile-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  top: 120px;
+  border: 1px green solid;
+  position: absolute;
+  z-index: 20;
+  width: 365px;
+}
+h1{
+  color: var(--light-grayish-blue);
+  font-size: 2rem;
+  letter-spacing: .5em;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+form{
+  padding: .8em 0;
+}
+input{
+  width: 100%;
+  color: var(--light-grayish-blue);
+  background: var(--very-dark-desaturated-blue);
+  border: none;
+  padding: .8em .3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+}
+input:focus{
+  outline: none;
+  border: none;
+}
+@media(min-width:900px){
+  .header{
+    background:url(images/bg-desktop-dark.jpg);
+  }
+  .container{
+    width: 590px;
+  }
+}

@@ -17,8 +17,8 @@ function Form({setInputText, todos, setTodos, inputText, setStatus}){
             <input
                 value={inputText}
                 onChange={inputTextHandler}
+                placeholder="Create a new todo..."
                 type="text"
-                className="input"
             />
             <button onClick={submitTodoHandler} className="button" type="submit"></button>
         </form>

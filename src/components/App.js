@@ -9,7 +9,9 @@ class App extends React.Component{
       <div className="header">
         <div className="container">
             <Mode />
-            <Form />
+            <Form 
+              inputText={this.inputText}
+            />
             <List />
           </div>
       </div>
